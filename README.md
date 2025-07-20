@@ -7,13 +7,9 @@ playwright install
 #官方文档：
 🔗 https://playwright.dev/python/
 #常用操作
-```
-print("Hello, world!")
-for i in range(3):
-print(i)
-```
+
 最简单的例子（无窗口运行）
-'''
+```
 from playwright.sync_api import sync_playwright
 
 with sync_playwright() as p:
@@ -23,7 +19,7 @@ with sync_playwright() as p:
     print("网页标题：", page.title())
     print("页面中 h1 文本：", page.text_content("h1"))
     browser.close()
-'''
+```
 | 功能        | 示例代码                                |
 | --------- | ----------------------------------- |
 | 打开网页      | `page.goto("https://...")`          |
