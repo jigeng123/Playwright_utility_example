@@ -7,6 +7,11 @@ playwright install
 #官方文档：
 🔗 https://playwright.dev/python/
 #常用操作
+```
+print("Hello, world!")
+for i in range(3):
+print(i)
+```
 最简单的例子（无窗口运行）
 '''
 from playwright.sync_api import sync_playwright
